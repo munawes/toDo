@@ -3,7 +3,7 @@ $("input[type  = 'text']").keypress(function(i) {
     if(i.which === 13) {
         var toDoText = $(this).val();
         $(this).val("");
-        $("ul").append("<li><span> X </span>" + toDoText + "</li>");
+        $("ul").append("<li><span><i class='fas fa-minus-square'></i></span> " + toDoText + "</li>");
     }
 });
 
@@ -18,4 +18,10 @@ $("ul").on("click", "span", function(e) {
         $(this).remove();
     });
     e.stopPropagation();
+})
+
+
+// toggle input field with icon click
+$(".fa-plus").on("click", function() {
+    $("input[type = 'text']").fadeToggle();
 })
