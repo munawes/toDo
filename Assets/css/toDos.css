@@ -1,5 +1,10 @@
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,203,41,1) 35%, rgba(0,212,255,1) 100%);
+}
+
 h1{
-    background: #2980b9;
+    background: rgb(0, 212, 255);
     color: white;
     margin: 0;
     padding: 10px 20px;
